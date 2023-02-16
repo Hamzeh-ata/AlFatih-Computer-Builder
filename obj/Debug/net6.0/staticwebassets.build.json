@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "OeRIdKvctvZB4gwowboFyVMsYNbyW20yXk5vqQrtZoo=",
+  "Source": "AfComputerBuilder",
+  "BasePath": "_content/AfComputerBuilder",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AfComputerBuilder\\wwwroot",
+      "Source": "AfComputerBuilder",
+      "ContentRoot": "D:\\projects\\ASP projects\\AfComputerBuilder\\wwwroot\\",
+      "BasePath": "_content/AfComputerBuilder",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

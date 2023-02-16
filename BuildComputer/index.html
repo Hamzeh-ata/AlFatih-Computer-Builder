@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/componentsList.css" />
+</head>
+<body>
+    <section class="mainSection d-lg-flex d-md-block d-sm-block">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid navContainer">
+                <img class="navbar-brand" src="./imgs/logo.png">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link compName inactiveComponent" id="cpuButton">CPU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link compName inactiveComponent" id="coolerButton">Cpu cooler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link compName inactiveComponent" id="gpuButton">GPU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link compName inactiveComponent" id="mbButton">MB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link compName inactiveComponent" id="memoryButton">Memory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  compName inactiveComponent" id="storageButton">Storage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link compName inactiveComponent" id="psuButton">PSU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="startOver nav-link compName " id="startOver">Start over</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12">
+                    <div class="componentsContainer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="componentName">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 col-md-12 ">
+                                    <div class="filterRow ">
+                                        <input placeholder="Search" id="searchByName">
+                                        <select id="filterSelect">
+                                            <option>Filter By</option>
+                                            <option value="1">Price Low to High</option>
+                                            <option value="2">Price High to Low</option>
+                                        </select>
+                                        <span>Compatibility</span>
+                                        <input type="checkbox" id="compatibilityChx" checked>
+                                        <span id="availableItems">10 Available Items</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-sm-center justify-content-md-center ">
+                                <div class="col-lg-9 col-md-12 col-sm-12 ">
+                                    <div class="componentsListContainer">
+                                        <div class="row justify-content-sm-center justify-content-md-center justify-content-lg-start me-0 " id="componentsListRow" componentsRow>
+                                            <template component-template>
+                                                <div class="col-lg-2 col-md-4 col-sm-6 m-2 comp-col" componentCol>
+                                                    <div class="component" component>
+                                                        <div class="componentDetails">
+                                                            <div class="componentDetailsImg">
+                                                                <img class="componentImg" component-img>
+                                                            </div>
+                                                            <span class="compBar"></span>
+                                                            <div class="componentDetailsName"><h2 component-name></h2></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </div>
+                                        <div class="addComponent">
+                                            <a id="nextButton">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-8 col-sm-8">
+                                    <div class="componentDetailsContainer">
+                                        <div class="selectedComponent">
+                                            <h2>Selected component details</h2>
+                                        </div>
+                                        <div class="componentDetailsContainerWrap container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-lg-12 col-md-6 col-sm-6  justify-content-sm-center justify-content-md-center align-self-center">
+                                                    <div class="componentimg ">
+                                                        <img class="selectedComponentImg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-10  col-md-6 col-sm-6">
+                                                    <div class="dataList">
+                                                        <div class="row w-100" id="dataListRow">
+                                                            <div class="col-lg-10 col-md-12 col-sm-12 dataListCol ">
+                                                                <div class="componentDeatilsList">
+                                                                    <ul></ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./js/componentsList.js"></script>
+<script>
+    jQuery(function () {
+        jQuery('#cpuButton').click();
+    });</script>
+
+</html>

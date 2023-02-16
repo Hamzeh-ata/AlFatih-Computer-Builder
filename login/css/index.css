@@ -1,0 +1,76 @@
+﻿body {
+    background-color: #D4D4D4;
+}
+body,html {
+    min-height:100vh;
+    height :100%;
+}
+.loginLogo, .loginHeaderText {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.loginLogo img {
+    width: 60px;
+}
+.loginText h1 {
+    font-size: 25px;
+    color: #1F9C85;
+    text-align:center;
+}
+#form {
+    display: grid;
+    place-content: center;
+    align-self: center;
+    background-color: #221F1F;
+    padding: 90px 30px;
+    width: 80%;
+    border-radius: 25px;
+    margin-top :20px;
+}
+.loginForm {
+  width : 100%;
+  display : flex;
+  justify-content:center;
+  margin : 5px;
+}
+
+
+.UserName, .passWord {
+    display: grid;
+    place-content: center;
+    margin-top: 10px;
+}
+.UserName span, .UserName input, .passWord span, .passWord input {
+    margin: 7px;
+}
+.UserName span, .passWord span {
+        color: whitesmoke;
+        text-align: center;
+}
+.UserName input, .passWord input {
+        border-radius: 2px;
+        outline: none !important;
+        border: none !important;
+        padding:3px;
+ }
+.loginButton {
+    background: #1F9C85;
+    border-radius: 4px;
+    width: 120px;
+    justify-self: center;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    outline: none !important;
+    border: none !important;
+    cursor : pointer;
+}
+.loginErrors span{
+    color:red;
+    font-size : 15px;
+    margin-top :10px;
+    display:none;
+
+}

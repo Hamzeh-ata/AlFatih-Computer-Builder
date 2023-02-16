@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+a {
+    text-decoration: none !important;
+}
+
+html, body {
+    min-height: 100vh;
+    height: 100%;
+    min-width: fit-content;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ul {
+    list-style-type: none !important;
+}
+
+@media screen and (min-width:992px) {
+    .navbar .navContainer, .navbar-expand-lg .navbar-collapse, .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        width: 10%;
+        min-height: 100vh;
+        align-items: flex-start;
+
+    }
+    nav {
+        background-position: -100px 0;
+
+    }
+    .navbar-brand {
+        margin-right: 0px !important;
+    }
+
+        .navbar-brand {
+            height: 100px !important;
+            width: 60px;
+        }
+}
+
+.navbar {
+    background-color: #221F1F !important;
+}
+
+.nav-item {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.compName {
+    color: #c8c1c1;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    padding: 0px 7px;
+    text-align: center;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.navbar-brand{
+    width: 60px;
+}
+
+.activeComponent {
+    border-right: 2px solid #1F9C85;
+    border-left: 2px solid #1F9C85;
+}
+
+.startOver {
+    background-color: #1F9C85;
+    border-radius: 2px;
+    text-align: center;
+}
+
+a:hover {
+    color: #c8c1c1;
+}
+
+.componentName {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+    .componentName span {
+        color: #221F1F !important;
+        font-size: 25px;
+        font-family: 'Anton', sans-serif;
+    }
+
+.filterRow input {
+    background: #dedede;
+    border-radius: 6px;
+    border: 0px !important;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid transparent !important;
+    cursor: pointer;
+}
+
+    .filterRow input:focus {
+        border: 1px solid #1F9C85 !important;
+        outline: none !important;
+    }
+
+.filterRow select {
+    background: #dedede;
+    border-radius: 6px;
+    border: 0px !important;
+    padding: 5px;
+    margin: 10px;
+}
+
+.component {
+    width: 100%;
+    height:160px;
+    border: 1px solid #9a9a9a;
+    cursor: pointer;
+    background: white;
+    border-radius: 4px;
+    display:grid;
+    place-content:center;
+}
+
+.compBar {
+    border-top: 1px solid #9E9E9E;
+    margin: 10px 0px;
+    display: block;
+}
+
+.componentDetailsName h2 {
+    font-size: calc(10.4px + .3vmin);
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+.inactiveComponent {
+    color: #868383;
+    pointer-events: none;
+}
+.componentDetails {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.componentDetailsImg {
+    display: flex;
+    justify-content: center;
+}
+
+    .componentDetailsImg img {
+        width: 65px;
+        max-width: 100%;
+    }
+
+.componentsListContainer {
+    width: 100%;
+    height: 100%;
+    /*height: 600px;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.componentDetailsContainer {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid #9d9d9d;
+    max-height: 100%;
+    margin: 10px;
+}
+
+.componentimg {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.componentDetailsContainer .dataList {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.dataList ul {
+    width: 100%;
+    padding-inline-start: 5px !important;
+}
+
+    .dataList ul li {
+        width: 100%;
+    }
+
+.selectedComponent {
+    background-color: #1C1C1C;
+    padding: 13px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+    .selectedComponent h2 {
+        font-size: 15px;
+        color: #C7C7C7;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: auto;
+    }
+
+.componentDetailsContainerWrap {
+    align-self: center;
+}
+
+.componentDetailsContainerWrap, .componentimg {
+    width: 100%;
+}
+
+.componentDetailsContainer img {
+    max-width: 100%;
+    max-height: 150px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+    .componentDetailsContainer img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.liData, .componentName span {
+    text-transform: capitalize;
+}
+
+    .liData strong {
+        font-size: 15px;
+    }
+
+.liData {
+    font-size: 14px;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+    .liData::-webkit-scrollbar {
+        display: none;
+    }
+
+.addComponent {
+    display: grid;
+    float: right;
+    margin-top: 20px;
+    place-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .addComponent a {
+        align-self: center;
+        background-color: #1F9C85 !important;
+        padding: 7px;
+        font-size: 15px;
+        cursor: pointer;
+        width: 120px;
+        color: white !important;
+        place-self: center !important;
+    }
+
+.selectedcomponentWarning {
+    font-size: 13px;
+    color: red;
+    text-align: center;
+}
+
+.filterRow {
+    width: 100%;
+}
+
+    .filterRow span {
+        color: black;
+        font-size: 14px;
+        text-align: center;
+        align-self: center;
+    }
+
+#compatibilityChx {
+    width: 15px;
+}
+
+.addComponent span {
+    margin-top: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+.addComponent select {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#availableItems {
+    color: #1F9C85;
+    font-weight: bold;
+}
+
+.active {
+    border: 3px solid #1F9C85;
+}
+
+.navbar-toggler {
+    background-color: #1f9c85;
+}
+.startOver {
+    color: #c8c1c1;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    padding: 0px 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+

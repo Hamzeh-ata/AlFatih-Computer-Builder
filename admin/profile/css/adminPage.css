@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+a {
+  text-decoration: none !important;
+}
+html , body{
+  min-height: 100vh;
+  
+}
+body {
+background-color: #D4D4D4;
+height: 100%;
+}
+
+.asideLogo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.componentNameAside {
+  text-align: center;
+  margin-top: 30px;
+}
+.componentNameAside a{
+  font-size: calc(0.5em + 1vmin);
+  line-height: 39px;
+  color: #868686 !important;
+  font-family: 'Anton', sans-serif;
+  cursor: pointer;
+  padding: 15px;
+
+}
+.activeComponent{
+  border-right:2px solid #1F9C85;
+  border-left:2px solid #1F9C85;
+}
+.logOut{
+  text-align: center;
+  margin-top: 30px;
+ 
+}
+.logOut a {
+    color: #1F9C85 !important;
+    border: 1px solid #214E45;
+    padding: 7px;
+    font-size: calc(0.6em + 1vmin);
+    font-family: 'Anton', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    }
+.componentName{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.componentName span{
+  color: #221F1F !important;
+  font-size: 25px;
+  font-family: 'Anton', sans-serif;
+}
+.searchInput input{
+  background: #C7C7C7;
+border-radius: 6px;
+border:0px !important;
+padding: 5px;
+margin: 10px;
+border : 1px solid transparent !important;
+
+}
+.searchInput input:focus{
+  border : 1px solid #1F9C85 !important;
+  outline: none !important;
+}
+.searchInput select{
+  background: #C7C7C7;
+  border-radius: 6px;
+  border:0px !important;
+  padding: 5px;
+  margin: 10px;
+}
+.component{
+  width: 100%;
+border: 1px solid #9E9E9E;
+cursor: pointer;
+}
+.compBar{
+  border-top: 1px solid #9E9E9E;
+ margin: 10px 0px;
+  display: block;
+}
+.componentDetailsName h2{
+  font-size: calc(10.4px + .3vmin);
+  font-weight: 700;
+  text-align: center;
+}
+.componentDetails{
+  display: grid;
+  place-content: center;
+  text-align: center;
+ padding: 20px;
+}
+.componentDetailsImg {
+  display: flex;
+  justify-content: center;
+}
+    .componentDetailsImg img {
+        max-width: 100%;
+       
+    }
+
+.componentsListContainer{
+  width: 100%;
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.componentDetailsContainer{
+  background-color: #CCC;
+  width: 100%;
+  min-height: 600px;
+  border: 1px solid #9d9d9d;
+  max-height: 100%;
+  margin: 10px;
+}
+.componentimg {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.componentDetailsContainer .dataList{
+margin-top:15px;
+
+width:100%;
+}
+.dataList ul {
+    width: 100%;
+    padding-inline-start: 5px !important;
+}
+    .dataList ul li {
+        width: 100%;
+    }
+#U1 , #U2 , #U3{
+
+}
+.componentDetailsContainerWrap {
+    align-self: center;
+}
+.componentDetailsContainerWrap,.componentimg {
+  width: 100%;
+}
+.componentDetailsContainer img {
+    max-width: 100%;
+    width: 250px;
+    filter: drop-shadow(0px 0px 5px #000000);
+    -webkit-filter: drop-shadow(0px 0px 5px #000000);
+    -moz-filter: drop-shadow(0px 0px 5px #000000);
+}
+@media screen and (min-width: 1540px) {
+ .componentsListContainer{
+  height: 900px !important;
+ }
+ .componentDetailsContainer{
+  min-height: 700px;
+}
+}
+@media screen and (max-width: 1120px) {
+
+  .componentDetailsContainer img {
+  width: 100%;
+}
+
+}
+ul , li {
+  list-style-type: none !important;
+}
+.selectedComponent{
+  background-color: #1C1C1C;
+  padding: 13px;
+  width: 100%;
+  border: 1px solid #000;
+}
+.selectedComponent h2{
+  font-size: 15px;
+  color:#C7C7C7;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: auto;
+
+}
+.asideUserEmail {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.asideUserEmail span {
+    color: #1F9C85;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.logoImg img {
+    width:120px;
+}
+.welcomeText h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #221f1f;
+}
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+a {
+    text-decoration: none !important;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #D4D4D4;
+    height: 100%;
+}
+
+.aside {
+    width: 100%;
+    height: 100%;
+    background-color: #221F1F;
+    min-height:100vh;
+}
+.asideWrap{
+    padding-top:10px;
+}
+@media screen and (max-width: 980px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    .tableHeaderRow {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    .aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+        min-height: auto;
+    }
+    .asideWrap {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding:10px;
+    }
+    .componentNameAside {
+        margin-top: 0px !important;
+    }
+        .componentNameAside a {
+            font-size: 10px !important;
+        }
+    .logOut {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        display: flex;
+        margin-left:10px;
+    }
+
+        .logOut a {
+            align-self: center;
+            font-size: 10px !important;
+        }
+
+    div.content {
+        margin-left: 0;
+    }
+
+    .componentNameAside a {
+        font-size: 10px;
+    }
+    .asideCol {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+
+.asideLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.componentNameAside {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.componentNameAside a {
+        font-size: 12px;
+        line-height: 39px;
+        color: #868686 !important;
+        font-family: 'Anton', sans-serif;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+.activeComponent {
+    border-right: 2px solid #1F9C85;
+    border-left: 2px solid #1F9C85;
+}
+
+.logOut {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+    .logOut a {
+        color: #1F9C85 !important;
+        border: 1px solid #214E45;
+        padding: 7px;
+        font-size: calc(0.6em + 1vmin);
+        font-family: 'Anton', sans-serif;
+        cursor: pointer;
+        width: 100%;
+    }
+
+.componentName {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+    .componentName span {
+        color: #221F1F !important;
+        font-size: 25px;
+        font-family: 'Anton', sans-serif;
+    }
+
+.searchInput input {
+    background: #C7C7C7;
+    border-radius: 6px;
+    border: 0px !important;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid transparent !important;
+}
+
+    .searchInput input:focus {
+        border: 1px solid #1F9C85 !important;
+        outline: none !important;
+    }
+
+.searchInput select {
+    background: #C7C7C7;
+    border-radius: 6px;
+    border: 0px !important;
+    padding: 5px;
+    margin: 10px;
+}
+
+.component {
+    width: 100%;
+    border: 1px solid #9E9E9E;
+    cursor: pointer;
+}
+
+.compBar {
+    border-top: 1px solid #9E9E9E;
+    margin: 10px 0px;
+    display: block;
+}
+
+.componentDetailsName h2 {
+    font-size: calc(10.4px + .3vmin);
+    font-weight: 700;
+    text-align: center;
+}
+
+.componentDetails {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.componentDetailsImg {
+    display: flex;
+    justify-content: center;
+}
+
+    .componentDetailsImg img {
+        max-width: 100%;
+    }
+
+.componentsListContainer {
+    width: 100%;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.componentDetailsContainer {
+    background-color: #CCC;
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid #9d9d9d;
+    max-height: 100%;
+    margin: 10px;
+}
+
+.componentimg {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.componentDetailsContainer .dataList {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.dataList ul {
+    width: 100%;
+    padding-inline-start: 5px !important;
+}
+
+    .dataList ul li {
+        width: 100%;
+    }
+
+#U1, #U2, #U3 {
+}
+
+.componentDetailsContainerWrap {
+    align-self: center;
+}
+
+.componentDetailsContainerWrap, .componentimg {
+    width: 100%;
+}
+
+.componentDetailsContainer img {
+    max-width: 100%;
+    width: 250px;
+    filter: drop-shadow(0px 0px 5px #000000);
+    -webkit-filter: drop-shadow(0px 0px 5px #000000);
+    -moz-filter: drop-shadow(0px 0px 5px #000000);
+}
+
+@media screen and (min-width: 1540px) {
+    .componentsListContainer {
+        height: 900px !important;
+    }
+
+    .componentDetailsContainer {
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+    .componentDetailsContainer img {
+        width: 100%;
+    }
+}
+
+ul, li {
+    list-style-type: none !important;
+}
+
+.selectedComponent {
+    background-color: #1C1C1C;
+    padding: 13px;
+    width: 100%;
+    border: 1px solid #000;
+}
+ .selectedComponent h2 {
+     font-size: 15px;
+     color: #C7C7C7;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: auto;
+    }
+.asideUserEmail {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.asideWrap {
+    height: 100%;
+}
+
+.logoImg img {
+    width: 120px;
+}
+
+.welcomeText h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #221f1f;
+}
+
+.main {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout:fixed;
+  
+}
+
+th {
+    background: #464646;
+    color: rgb(215, 209, 209);
+    font-weight: bold;
+    font-size: 10px;
+}
+td {
+    font-size: 10px;
+}
+td, th {
+    padding: 6px;
+    
+}
+@media only screen and (max-width: 980px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            text-align: center;
+            color: black;
+        }
+    .newComponentRow td:before {
+        color: white;
+    }
+    td:nth-of-type(1):before {
+        content: attr(data-before);
+    }
+
+        td:nth-of-type(2):before {
+            content: attr(data-before);
+        }
+
+        td:nth-of-type(3):before {
+            content: attr(data-before);
+        }
+
+        td:nth-of-type(4):before {
+            content: attr(data-before);
+        }
+
+        td:nth-of-type(5):before {
+            content: attr(data-before);
+        }
+
+        td:nth-of-type(6):before {
+            content: attr(data-before);
+        }
+
+        td:nth-of-type(7):before {
+            content: attr(data-before);
+        }
+
+        td:nth-of-type(8):before {
+            content: attr(data-before);
+        }
+
+        td:nth-of-type(9):before {
+            content: attr(data-before);
+        }
+
+        td:nth-of-type(10):before {
+            content: attr(data-before);
+        }
+        td:nth-of-type(11):before {
+            content: attr(data-before);
+        }
+        td:nth-of-type(12):before {
+            content: attr(data-before);
+        }
+        td:nth-of-type(13):before {
+            content: attr(data-before);
+        }
+        td:nth-of-type(14):before {
+            content: attr(data-before);
+        }
+        td:nth-of-type(15):before {
+            content: attr(data-before);
+        }
+        td:nth-of-type(16):before {
+            content: attr(data-before);
+        }
+        td:nth-of-type(17):before {
+            content: attr(data-before);
+        }
+    td:nth-of-type(18):before {
+        content: attr(data-before);
+    }
+    td:nth-of-type(19):before {
+        content: attr(data-before);
+    }
+    td:nth-of-type(20):before {
+        content: attr(data-before);
+    }
+    td:nth-of-type(21):before {
+        content: attr(data-before);
+    }
+        td,th{
+            font-size:12px;
+        }
+}
+.dataRow:nth-child(even) {
+    background-color: #8F8F8F;
+}
+
+.tableHeader {
+    width: 100%;
+    background-color: #303030;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerText h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    align-self: center;
+}
+
+.headerButtons {
+    align-self: center;
+    width: 100%;
+}
+
+.addNewComponent, .editComponent {
+    background: #1F9C85;
+    border-radius: 4px;
+    color: white !important;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 5px;
+    cursor:pointer;
+}
+.deleteComponent {
+    background: #6e1818;
+    border-radius: 4px;
+    color: white !important;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+
+.mainWrap {
+    width: 100%;
+}
+.tableHeader {
+    width: 100%;
+    background-color:#303030;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.tableHeaderRow {
+    width: 100%;
+}
+.dataRow:nth-child(even) {
+    background-color: #8F8F8F;
+}
+.dataRow {
+    overflow-y: auto;
+    overflow-x: auto;
+}
+tbody {
+}
+td {
+    /* Trigger vertical scroll    */
+
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+td {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.tableWrap {
+    width: 100%;
+}
+td input {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    display: block;
+    height: 25px;
+    max-height: 100px;
+    background-color: #d8d8d8;
+    border: none !important;
+    outline: none !important;
+}
+    td input:focus {
+        border: none !important;
+        outline : none !important;
+    }
+.newComponentRow{
+    background-color: #464646;
+    
+}
+.saveNewComp {
+    background: #1F9C85;
+    border-radius: 4px;
+    color: white !important;
+    align-self: center;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.newComponentButton, .saveChanges {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    margin: 10px 0px;
+    position: relative;
+}
+.successfullyAdded {
+    text-align: center;
+    font-size: 12px;
+    color: green;
+    margin-top: 10px;
+}
+.errorText, .alreadyExits, .errorText2 {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    margin-top: 10px;
+}
+.tdInput {
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    overflow: auto;
+    white-space: nowrap;
+}
+td::-webkit-scrollbar {
+    display: none;
+}
+.container-fluid{
+    padding-left:0px !important;
+}
+.editBox ,.deleteBox {
+    display:flex;
+    justify-content:start;
+    width:15px;
+}
+.activedTdInput {
+    background-color: white !important;
+}
+.adminPanel{
+    display:grid;
+    place-content:center;
+}
+.adminPanel .logo{
+    display:flex;
+    justify-content:center;
+ }
+    .adminPanel .logo img {
+        width: 100px;
+    }
+.adminPage h1 {
+    color: #1F9C85;
+    font-size:30px;
+    font-weight:bold;
+    margin-top:10px;
+}
+.adminPage h2 {
+    color: #221f1f;
+    font-size: 20px;
+    margin-top: 10px;
+}

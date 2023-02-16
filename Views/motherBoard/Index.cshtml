@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="/StaticFiles/css/componentsList.css" type="text/css"  />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 col-sm-6 col-md-6 pl-0">
+                <div class="aside">
+                    <div class="asideWrap">
+                        <div class="asideLogo">
+                            <img src="./imgs/logo.png">
+                        </div>
+                        <div class="logoText">
+                            <span>PC BUILDER</span>
+                        </div>
+                        <div class="componentNameAside">
+                            <a class="compName inactiveComponent" id="cpuButton">CPU</a>
+                        </div>
+                        <div class="componentNameAside">
+                            <a class="compName inactiveComponent" id="gpuButton">GPU</a>
+                        </div>
+                        <div class="componentNameAside">
+                            <a class="compName inactiveComponent" id="mbButton">MB</a>
+                        </div>
+                        <div class="componentNameAside">
+                            <a class="compName inactiveComponent" id="memButton">Memory</a>
+                        </div>
+                        <div class="componentNameAside">
+                            <a class="compName inactiveComponent" id="storageButton">Storage</a>
+                        </div>
+                        <div class="componentNameAside">
+                            <a class="compName inactiveComponent" id="psuButton">PSU</a>
+                        </div>
+                        <div class="startOver">
+                            <a class="compName inactiveComponent" id="startOver">Start over</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-11 col-sm-6 col-md-6">
+                <div class="componentsContainer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="componentName">
+                                <span>CPU</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="searchInput">
+                                <input placeholder="Search in 300 CPU">
+                                <select>
+                                    <option>Filter By</option>
+                                    <option>Price Low to High</option>
+                                    <option>Price High to Low</option>
+                                    <option>Price Name</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9 col-md-12 col-sm-12">
+                                <div class="componentsListContainer">
+                                    <div class="row" id="componentsListRow">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12 col-sm-12">
+                                <div class="componentDetailsContainer">
+                                    <div class="selectedComponent">
+                                        <h2>Selected component details</h2>
+                                    </div>
+                                    <div class="componentDetailsContainerWrap">
+                                        <div class="componentimg">
+                                            <img class="selectedComponentImg" >
+                                        </div>
+                                        <div class="dataList">
+                                            <div class="row w-100" id="dataListRow">
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <div class="selectedComponentBox">
+                                                        <div class="selectedComponentBoxBorder">
+                                                            <h2 id="selectedComponentBoxOne">   </h2>
+                                                          
+                                                        </div>
+                                                        <ul id="U1">
+                                                        <li><strong id="L1U1S"></strong><span id="L1U1"></span></li>
+                                                        <span class="ComponentBoxBar"></span>
+                                                        <li><strong id="L2U1S"></strong> <span id="L2U1"></span> </li>
+                                                        <li><strong id="L3U1S"></strong><span id="L3U1"></span> </li>
+                                                    </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <ul id="U2">
+                                                        <li><strong id="L1U2S"></strong><span id="L1U2"></span></li>
+                                                        <li><strong id="L2U2S"></strong><span id="L2U2"></span> </li>
+                                                        <li><strong id="L3U2S"></strong><span id="L3U2"></span> </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="w-100">   </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <ul id="U3">
+                                                        <li><strong id="L1U3S"></strong><span id="L1U3"></span></li>
+                                                        <li><strong id="L2U3S"></strong><span id="L2U3"></span> </li>
+                                                        <li><strong id="L3U3S"></strong><span id="L3U3"></span> </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <ul id="U4">
+                                                        <li><strong id="L1U4S"></strong><span id="L1U4"></span></li>
+                                                        <li><strong id="L2U4S"></strong><span id="L2U4"></span> </li>
+                                                        <li><strong id="L3U4S"></strong><span id="L3U4"></span> </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="w-100">   </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <ul id="U5">
+                                                        <li><strong id="L1U5S"></strong><span id="L1U5"></span></li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/StaticFiles/js/componentsList.js"></script>
+</html>
+
